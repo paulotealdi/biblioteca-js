@@ -19,7 +19,7 @@ function addBook() {
     const book = newBook();
     
     if(book.bookname == "" || book.authorname == "") {
-        alert("Preencha todos os campos antes de adicionar um livro!");
+        alert("Fill every field before adding a new book!");
         return;
     }
     
@@ -81,28 +81,28 @@ function renderBookList() {
         const div3 = document.createElement('div');
         const div4 = document.createElement('div');
 
-        span1.innerText = "Nome do livro";
+        span1.innerText = "Book's name";
         span1.classList.add("span-section");
         bookname.innerText = book.bookname;
         bookname.classList.add("h3-section");
         div1.appendChild(span1);
         div1.appendChild(bookname);
 
-        span2.innerText = "Nome do(a) autor(a)";
+        span2.innerText = "Author's name";
         span2.classList.add("span-section");
         authorname.innerText = book.authorname;
         authorname.classList.add("h3-section");
         div2.appendChild(span2);
         div2.appendChild(authorname);
 
-        span3.innerText = "Adicionado em";
+        span3.innerText = "Added in";
         span3.classList.add("span-section");
         date.innerText = book.date;
         date.classList.add("h3-section");
         div3.appendChild(span3);
         div3.appendChild(date);
 
-        span4.innerText = "Leitura concluída";
+        span4.innerText = "Reading complete";
         span4.classList.add("span-section");
         readbook.type = 'checkbox';
         readbook.checked = book.readbook;
