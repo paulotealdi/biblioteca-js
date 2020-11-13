@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Minha biblioteca digital</title>
+</head>
+<body>
+    <div id="menu-panel-background">
+        <div id="menu-panel">
+            <h1>📚 Minha biblioteca</h1>
+            <div>
+                <label for="book-name">Nome do livro</label><br>
+                <input type="text" id="book-name">
+            </div>
+            <div>
+                <label for="author-name">Nome do autor</label><br>
+                <input type="text" id="author-name">
+            </div>
+            <div>
+                <label for="read-book">Leitura concluída</label>
+                <input type="checkbox" id="read-book">
+            </div>
+            <button type="button" onclick="addBook()">Adicionar livro</button>
+        </div>
+    </div>
+
+    <div id="library-content">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
